@@ -1,3 +1,18 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from django.http import HttpResponse
 
-# Create your views here.
+from .serializers import WhitelistSerialzer
+from .models import Whitelist
+
+#class WhitelistViewSet(view)
+
+def add_to_whitelist(request):
+    if request.method == 'POST':
+        entry = new Whitelist(request.POST)
+        entry.save
+        return HttpResponse(200)
+
+class WhitelistViewSet(viewsets.ModelViewSet):
+    queryset = Whitelist.objects.all().order_by('name')
+    serialzer_class = WhitelistSerialzer

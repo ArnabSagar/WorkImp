@@ -1,2 +1,0 @@
-# noname-htne-project
-hack
