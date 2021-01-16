@@ -1,2 +1,6 @@
 # noname-htne-project
-hack
+
+
+Project for Hack The Northeast
+
+This will be updated soon :)
