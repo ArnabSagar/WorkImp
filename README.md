@@ -1,7 +1,7 @@
 # WorkImp
 
 
-Project submission for Hack the northeast
+Project submission for Hack the Northeast
 
 Work in progress!! Check back later :)
 
