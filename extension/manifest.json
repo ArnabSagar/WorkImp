@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "WorkImp",
+  "description": "Fetches current tab url.",
+  "version": "1.0",
+<<<<<<< HEAD
+  "author": "Arnab Sagar",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs", "storage"],
+=======
+  "author": "Arnab Sagar and Your Boi Nathan",
+>>>>>>> 48ace207a1e4ea62ed81253b1430440b40e7bec3
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_title": "WorkImp Settings"
+  },
+  "background": {
+    "scripts": ["background.js", "searchWhitelist.js"],
+    "persistent": false
+  },
+  "contentscripts": {
+    "js": ["script.js"]
+    "persistent": false
+  }
+}
