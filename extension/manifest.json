@@ -3,7 +3,7 @@
   "name": "WorkImp",
   "description": "Fetches current tab url.",
   "version": "1.0",
-  "author": "Arnab Sagar",
+  "author": "Arnab Sagar and Your Boi Nathan",
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png",
@@ -11,6 +11,10 @@
   },
   "background": {
     "scripts": ["background.js"],
+    "persistent": false
+  },
+  "contentscripts": {
+    "js": ["script.js"]
     "persistent": false
   }
 }

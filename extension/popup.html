@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <title>Work Imp</title>
     <link rel="stylesheet" href="./popup.css" />
+
   </head>
-  <body>
-    <h5 class="main-title">WorkImp</h5>
-  </body>
+    <body>
+
+      <h5 class="main-title">Would you like to whitelist this page?</h5>
+      <button class='add-button' onclick="saveWhiteList"> Yes, this is a productive-page. </button>
+      <button class='add-button'> No, bully me! </button>
+      <h3 class="main-title">Manual Add</h3>
+      <textarea id="textarea" rows = "2" cols = "20"></textarea>
+      <button class='add-button' onclick = updateList()> Add </button>
+      <h3 class="main-title">Whitelist</h3>
+      <ul style:"list-style-position: inside" class="ordered_list" id="list"></ul>
+      <h3 class="main-title">Whitelist</h3>
+      <script type="text/javascript" src="popup.js"></script>
+    </body>
 </html>
