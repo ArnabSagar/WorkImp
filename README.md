@@ -1,4 +1,4 @@
-# noname-htne-project
+# WorkImp
 
 
 Project submission for Hack the northeast
