@@ -1,12 +1,69 @@
 body {
-  background: rgb(94, 94, 94);
+  background: rgb(142, 183, 132);
   width: 200px;
-  height: 300px;
+  max-height: 1800px;
+  background: linear-gradient(to bottom, #1c5914 0%,#4b633a 100%);
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #616161;
+}
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+div {
+  border: 1px solid rgba(255,255,255,.1);
+  width: 10em;
+  height: 10em;
+  transform: rotate(45deg);
+  margin: 2em;
+  float: left;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%,rgba(0,0,0,0.05) 100%);
 }
 
 .main-title {
   text-align: center;
-  color: white;
-  font-size: 1rem;
+  color: rgb(255, 230, 230);
+  font-size: 1.5rem;
   font-family: sans-serif;
+}
+
+.add-button {
+  width: 150px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: Helvetica;
+  text-align: center;
+  color: black;
+  background: rgb(225, 225, 225);
+  display: inline-block;
+  border: none;
+  transition: background 250ms ease-in-out,
+                  transform 150ms ease;
+}
+
+.add-button:hover,
+.add-button:focus {
+    background: rgb(255, 255, 255);
+}
+
+.add-button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.add-button:active {
+    transform: scale(0.99);
+}
+
+.ordered_list {
+  overflow: auto;
 }
