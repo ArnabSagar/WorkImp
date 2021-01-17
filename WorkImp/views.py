@@ -13,6 +13,8 @@ def add_to_whitelist(request):
         entry.save
         return HttpResponse(200)
 
+def compare_white_list
+
 class WhitelistViewSet(viewsets.ModelViewSet):
     queryset = Whitelist.objects.all().order_by('name')
     serialzer_class = WhitelistSerialzer
